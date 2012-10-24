@@ -1,0 +1,9 @@
+<?php if (isset($_GET['done']) == 1) { ?>
+    <div class="alert alert-success">
+    <strong>Movie added successfully!</strong><br><a href="view">Check all movies on the library</a>
+    </div>
+    <?php } ?>
+<?php 
+echo "<h4>Add New Movie<h4>";
+echo $this->form;
+?>

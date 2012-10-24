@@ -1,0 +1,37 @@
+<html lang="en">
+	<head>
+		<title>Welcome to Zendy</title>
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl('/css/bootstrap.css'); ?>" />
+		<!--<script type="text/javascript" href="<?php echo $this->baseUrl('/js/jquery.min.js'); ?>"></script>
+		<script type="text/javascript" href="<?php echo $this->baseUrl('/js/bootstrap.js'); ?>"></script>!-->
+	    <? $this->headScript()->appendFile('/js/bootstrap.js'); ?>
+		<? $this->headLink()->appendStylesheet('/css/bootstrap.css'); ?>
+		<?php echo $this->headScript();
+		echo $this->headLink(); ?>
+	</head>
+	<body style="background-color: white;">
+		<div class="row"><br>  
+			<div class="container">
+
+			<div class="span5">
+
+			<h1>Welcome to Zendy</h1>
+			<h2>Movie Library<div class="span1"><img src="/img/mov.jpg" /></div>
+				</h2></div>
+			<div class"span5" style="padding-top:40px; padding-left:500px;">
+				<ul class="nav nav-pills">
+			    <li class="active">
+			    <a href="/movie/">Home</a>
+			    </li>
+			    <li class="active"><a href="/movie/add">Add New Movie</a></li>
+			    <li class="active"><a href="/movie/view">Browse & Edit Movies</a></li>
+			    </ul></div>
+			<hr>
+			<?php echo $this->layout()->content; ?><br>  
+			<hr>
+				<div class="small">
+					<small>All rights reserved - Zendy 2012</small>
+				</div>
+		 </div></div>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+<?php if (isset($_GET['done']) == 1) { ?>
+    <div class="alert alert-success">
+    <strong>Movie updated successfully!</strong><br><a href="view">Check all movies on the library</a>
+    </div>
+    <?php } ?>
+
+<?php 
+echo "<h4>Update Movie<h4>";
+
+//$this->form->populate(array('title'=>$_GET['title'],'story'=>$_GET['story']));
+echo $this->form;
+?>
